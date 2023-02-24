@@ -1,0 +1,21 @@
+# File Crawler
+# Folder/subdirectory folder search
+
+A __simple__ _program_ for searching through 
+
+* [x] folders
+* [x] files
+* [x] file contents 
+
+to search for a specific string of *characters*.
+
+## How to search
+1. Paste your selected folder in the root variable
+```
+Example:
+rootdir = ('C:\\Users\\Julie\\Documents\\GitHub\\Crawler\\TestData') <- Your file goes here
+```
+To search recursively through every single subdirectory.
+
+## USE:
+Searching contents uses os.walk() function to search for the file contents
