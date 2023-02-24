@@ -7,7 +7,7 @@ A __simple__ _program_ for searching through
 * [x] files
 * [x] file contents 
 
-to search for a specific string of *characters*.
+to search for a __specific__ string of *characters*.
 
 ## How to search
 1. Paste your selected folder in the root variable
