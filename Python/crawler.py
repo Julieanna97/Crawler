@@ -14,28 +14,33 @@ import os
 def main():
 
     # Enter the file directory you want to search the string for
-    rootdir = ('C:\\Users\\Julie\\Documents\\GitHub\\Crawler\\TestData')
+    #rootdir = ('C:\\Users\\Julie\\Documents\\GitHub\\Crawler\\TestData')
+
+    # Or use current working directory
+    cwd = os.getcwd()
 
     search_str = input("-----------------\nSearch for a string:\n-----------------\n")
 
     # loops through tuple list of format for search
-    extensions = ('.txt', 'md', '.docx')
+    extensions = ('.txt', '.md', '.docx')
 
-    for folder, dirs, files in os.walk(rootdir):
+    # recursively walk through a folder and it's contents using os.walk()
+    for folder, dirs, files in os.walk(cwd):
+        found = False
         for file in files:
             if file.endswith(extensions):
-                fullpath = os.path.join(folder, file)
-                with open(fullpath, 'r', encoding="utf8") as f:
+                dir_path = os.path.join(folder, file)
+                with open(dir_path, 'r', encoding = "utf8") as f:
                     for line in f:
                         if search_str.lower() in line.lower():
-                            print("{} can be found at: {}".format(search_str, fullpath))
+                            print("{} can be found at:\n-----------\n{}\n-----------".format(search_str, dir_path))
+                            found = True
                             break
 
-    if search_str.lower() not in line.lower():
-        print("String {} can't be found".format(search_str))
-        g = input("Press enter to exit...\n")
+    if not os.path.isfile(dir_path):
+        print("Error! {} doesn't seem to be formattable...".format(dir_path))
 
 main()
 
-""" MORE FUNCTIONS COMING"""
+""" MORE FUNCTIONS COMING """
 """ CODE HERE """
