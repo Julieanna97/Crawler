@@ -15,6 +15,13 @@ to search for a __specific__ string of *characters* using _recursion._
 Example:
 rootdir = ('C:\\Users\\Julie\\Documents\\GitHub\\Crawler\\TestData') <- Your file goes here
 ```
+
+Or automatically set current working directory
+
+```
+Example: os.getcwd()
+```
+
 To search recursively through every single subdirectory.
 
 ## USE:
