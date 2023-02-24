@@ -10,7 +10,7 @@ A __simple__ _program_ for searching through
 to search for a __specific__ string of *characters* using _recursion._
 
 ## How to search
-1. Paste your selected folder in the root dir:
+1. Paste your selected folder in the root directory:
 ```
 Example:
 rootdir = ('C:\\Users\\Julie\\Documents\\GitHub\\Crawler\\TestData') <- Your file goes here
