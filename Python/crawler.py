@@ -95,6 +95,12 @@ class HashMap:
                                         self.add(key, value)
                                         found = True
                                         break
+
+                if not os.path.isfile(dir_path):
+                       print("CHECK THE ADDRESS FILE... Seems to be something wrong with the file directory!")
+                
+
+
 if __name__ == '__main__':
         h = HashMap()
         h.crawl()
