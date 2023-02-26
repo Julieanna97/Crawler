@@ -27,7 +27,7 @@ To search recursively through every single subdirectory.
 ## USE:
 Searching contents uses os.walk() function to search for the file contents
 
-## HASHMAP EXAMPLE:
+## HASHMAP KEY-VALUE EXAMPLE:
 ```
 ['vatten', 'C:\\Users\\Julie\\Documents\\GitHub\\Crawler\\TestData\\Makaroner.txt', 'C:\\Users\\Julie\\Documents\\GitHub\\Crawler\\TestData\\Drycker\\Vatten.md', 'C:\\Users\\Julie\\Documents\\GitHub\\Crawler\\TestData\\Drycker\\KoffeinDrycker\\ColaZero.txt', 'C:\\Users\\Julie\\Documents\\GitHub\\Crawler\\TestData\\Drycker\\KoffeinDrycker\\Kaffe.txt']
 
