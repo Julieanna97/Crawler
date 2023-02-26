@@ -25,7 +25,7 @@ class HashMap:
                 # construct start at 0
                 # initialized hash table of size
                 self.capacity = capacity
-                self.size = 10               
+                self.size = 50               
                 self.map = [None] * self.size     
 
         def get_hash(self, key):
@@ -124,9 +124,29 @@ class HashMap:
 if __name__ == '__main__':
 
         h = HashMap()
+
         # crawl() searches for text of strings or characters in subdirs/cwd
         h.crawl()
+        
         # prints the hash table
         h.print()
+
+        # prints key in a hash table
         print(h.keys())
-        input("Press ENTER to exit...")
+
+        # loop condition
+        is_running = True
+
+        # get user input repeatedly until user quits
+        while is_running:
+               search_again = input("\nDo you want to search again?\n\nPress Y or N: ")
+               if search_again.upper() == "Y":
+                h.crawl()
+                h.print()
+                print(h.keys())
+               elif search_again.upper() == "N":
+                print("--------------\nHave a nice day! :)\n--------------")
+                is_running = False
+               else:
+                      print("\nPlease enter Y or N.")
+               
